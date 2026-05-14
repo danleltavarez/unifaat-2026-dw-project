@@ -72,6 +72,8 @@ Após configurar o `.env`, basta subir os containers:
 docker compose up
 ```
 
+O servidor web estará disponível em: http://localhost:8080
+
 ---
 
 ## 🔄 Nodemon (Opcional)
@@ -144,3 +146,5 @@ npm install --save-dev nodemon
 | Container           | Host            | Porta Interna | Porta Externa (localhost) |
 |--------------------|-----------------|---------------|---------------|
 | postgres-container | postgres_host   | 5432          | 6789          |
+| nginx-container | nginx-container   | 80          | 8080          |
+| nodeweb-container | nodeweb_host   | 3000          | -         |
